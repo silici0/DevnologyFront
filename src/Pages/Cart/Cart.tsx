@@ -1,4 +1,4 @@
-import {ActionInterface, ActionType, StateInterface} from "../../Types/global";
+import {ActionInterface, StateInterface} from "../../Types/global";
 import React, {useEffect, useState} from "react";
 import ProductCart from "../../Components/ProductCart/ProductCart";
 import {CartStyled} from "./CartCss";

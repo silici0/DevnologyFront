@@ -1,8 +1,8 @@
 import {ActionInterface, ProductInterface, StateInterface} from "../../Types/global";
-import {InfoStyled, ProductStyled} from "../Product/ProductCss";
-import Item from "../../Components/Product/Item";
+import {InfoStyled, ProductStyled} from "./ProductCss";
 import {useParams} from "react-router-dom";
 import ButtonCTA from "../../Components/ButtonCTA";
+import React from "react";
 
 interface Props {
   state: StateInterface;
@@ -11,7 +11,7 @@ interface Props {
 }
 
 export default function Product(props: Props) {
-  const {state, dispatch, ctx} = props;
+  const {state, dispatch} = props;
   const {title} = useParams()
   const {products} = state
   const item: ProductInterface = products.find(index => index.name.trim() === title?.trim()) as ProductInterface

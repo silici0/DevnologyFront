@@ -1,4 +1,4 @@
-import {createContext} from "react";
+import React, {createContext} from "react";
 import {StateInterface} from "../Types/global";
 import {initialState} from "../Reducer";
 

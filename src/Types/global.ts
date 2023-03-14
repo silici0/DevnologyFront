@@ -27,13 +27,3 @@ export interface ActionInterface{
   type: string;
   payload: unknown;
 }
-
-export type ActionType = {
-  type: string,
-  payload?:
-    | ProductInterface[]
-    | string
-    | number
-    | ChangeQuantityInterface
-    | RoutesInterface
-}

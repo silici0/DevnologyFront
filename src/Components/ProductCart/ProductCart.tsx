@@ -1,5 +1,5 @@
-import {ActionInterface, ActionType, ProductInterface} from "../../Types/global";
-import {ChangeEvent} from "react";
+import {ActionInterface} from "../../Types/global";
+import React, {ChangeEvent} from "react";
 import Trash from "../../Assets/trash.svg";
 import {ProductCartContentStyled, ProductCartStyled} from "./ProductCartCss";
 

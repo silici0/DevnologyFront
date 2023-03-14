@@ -1,6 +1,7 @@
-import {ActionInterface, ActionType, StateInterface} from "../../Types/global";
+import {ActionInterface, StateInterface} from "../../Types/global";
 import { HomeStyled } from "./HomeCss";
 import Item from "../../Components/Product/Item";
+import React from "react";
 
 interface Props {
   state: StateInterface;
@@ -9,7 +10,7 @@ interface Props {
 }
 
 export default function Home(props: Props) {
-  const {state, dispatch, ctx } = props;
+  const {state, dispatch } = props;
   return(
     <HomeStyled>
       {state.filteredItems.map(item => (

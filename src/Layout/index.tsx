@@ -1,5 +1,5 @@
 import React from "react";
-import {ActionInterface, ActionType} from "../Types/global";
+import {ActionInterface} from "../Types/global";
 import Header from "../Components/Header/Header";
 
 interface LayoutProps {
